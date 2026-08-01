@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kestrel Nutrition — Commercial Performance</title>
+<style>
+:root {
+  --ink:#12293F; --deep:#0E2033; --gold:#B8873B; --canvas:#EEF1F4; --card:#fff;
+  --muted:#6B7785; --rule:#DDE3E9; --pos:#1E7A45; --neg:#B03A2E;
+}
+* { box-sizing:border-box; }
+body { margin:0; background:var(--canvas); color:var(--ink); min-width:1320px;
+  font:14px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  font-variant-numeric:tabular-nums; }
+.serif { font-family:Georgia,"Times New Roman",serif; }
+header { background:var(--deep); color:#fff; padding:18px 28px; display:flex;
+  align-items:flex-end; justify-content:space-between; gap:24px; flex-wrap:wrap;
+  border-bottom:3px solid var(--gold); }
+header h1 { font-family:Georgia,serif; font-size:21px; margin:0; font-weight:400; letter-spacing:.2px; }
+header h1 b { font-weight:700; }
+.sub { color:#9FB2C4; font-size:12px; margin:4px 0 0; letter-spacing:.06em; text-transform:uppercase; }
+.meta { text-align:right; font-size:12px; color:#9FB2C4; }
+.meta .per { color:#fff; font-size:15px; font-family:Georgia,serif; }
+.tag { display:inline-block; margin-top:6px; border:1px solid var(--gold); color:var(--gold);
+  padding:2px 8px; font-size:10px; letter-spacing:.12em; }
+main { padding:20px 28px 34px; width:1320px; margin:0 auto; }
+.kpis { display:grid; grid-template-columns:repeat(5,1fr); gap:14px; margin-bottom:18px; }
+.card { background:var(--card); padding:14px 16px 12px; border-top:2px solid var(--ink); }
+.card-label { margin:0; font-size:10px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); }
+.card-value { margin:6px 0 10px; font-family:Georgia,serif; font-size:27px; line-height:1; }
+.rib { display:block; margin-bottom:8px; }
+.card-foot { margin:0; font-size:11px; color:var(--muted); display:flex; justify-content:space-between; gap:8px; }
+.grid { display:grid; grid-template-columns:2fr 1fr; gap:14px; margin-bottom:14px; }
+.grid3 { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-bottom:14px; }
+.panel { background:var(--card); padding:16px 18px 14px; }
+.panel h2 { font-family:Georgia,serif; font-weight:400; font-size:15px; margin:0 0 2px; }
+.panel p.note { margin:0 0 12px; font-size:11px; color:var(--muted); }
+.legend { display:flex; gap:16px; font-size:11px; color:var(--muted); margin-top:6px; }
+.legend i { display:inline-block; width:14px; height:2px; vertical-align:middle; margin-right:5px; }
+text.ax { font-size:10px; fill:var(--muted); font-family:inherit; }
+text.bl { font-size:11.5px; fill:var(--ink); font-family:inherit; }
+text.bv { font-size:11.5px; fill:var(--ink); font-family:inherit; font-weight:600; }
+text.bx { font-size:10px; font-family:inherit; }
+text.seg { font-size:10px; fill:#fff; font-family:inherit; font-weight:600; }
+table { width:100%; border-collapse:collapse; font-size:12.5px; }
+th { text-align:left; font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:var(--muted);
+  border-bottom:1px solid var(--rule); padding:0 10px 7px 0; font-weight:600; }
+td { padding:7px 10px 7px 0; border-bottom:1px solid #F0F3F6; }
+td.num, th.num { text-align:right; }
+.dot { display:inline-block; width:5px; height:5px; border-radius:50%; margin-right:2px; }
+.mrow { display:grid; grid-template-columns:84px 1fr 44px 66px; align-items:center; gap:8px;
+  font-size:12px; padding:7px 0; border-bottom:1px solid #F0F3F6; }
+.mrow b { text-align:right; font-weight:600; }
+.mrow em { font-style:normal; font-size:10.5px; color:var(--muted); text-align:right; }
+.mbar { background:#E7EBEF; height:9px; display:block; }
+.mbar i { display:block; height:9px; background:var(--gold); }
+footer { width:1320px; margin:0 auto; padding:0 28px 30px; font-size:11px; color:var(--muted); }
+footer strong { color:var(--ink); }
+@media print { body { background:#fff; } .panel, .card { break-inside:avoid; } }
+</style></head>
+<body>
+<header>
+  <div>
+    <h1 class="serif">Kestrel Nutrition <b>Kft.</b></h1>
+    <p class="sub">Commercial performance &middot; Hungary &middot; Poland &middot; Romania &middot; Czechia</p>
+  </div>
+  <div class="meta">
+    <div class="per">Year to date &middot; June 2026</div>
+    <div>All values EUR thousands unless stated</div>
+    <div class="tag">SAMPLE — FICTIONAL DATA</div>
+  </div>
+</header>
+<main>
+  <section class="kpis">
+      <article class="card">
+        <p class="card-label">Net revenue</p>
+        <p class="card-value">€5,842k</p>
+        <svg viewBox="0 0 209 12" width="209" height="12" class="rib"><rect x="0" y="4" width="209" height="4" fill="#E7EBEF" rx="2"/><rect x="0" y="4" width="177.1" height="4" fill="#1E7A45" rx="2"/><line x1="171.9" y1="0" x2="171.9" y2="12" stroke="#12293F" stroke-width="1.6"/></svg>
+        <p class="card-foot"><span>Plan €5,671k</span><span style="color:#1E7A45">+14.8% vs H1 2025</span></p>
+      </article>
+      <article class="card">
+        <p class="card-label">Gross profit</p>
+        <p class="card-value">€2,652k</p>
+        <svg viewBox="0 0 209 12" width="209" height="12" class="rib"><rect x="0" y="4" width="209" height="4" fill="#E7EBEF" rx="2"/><rect x="0" y="4" width="177.0" height="4" fill="#B03A2E" rx="2"/><line x1="177.1" y1="0" x2="177.1" y2="12" stroke="#12293F" stroke-width="1.6"/></svg>
+        <p class="card-foot"><span>Plan €2,654k</span><span style="color:#1E7A45">+13.6% vs H1 2025</span></p>
+      </article>
+      <article class="card">
+        <p class="card-label">Gross margin</p>
+        <p class="card-value">45.4%</p>
+        <svg viewBox="0 0 209 12" width="209" height="12" class="rib"><rect x="0" y="4" width="209" height="4" fill="#E7EBEF" rx="2"/><rect x="0" y="4" width="171.8" height="4" fill="#B03A2E" rx="2"/><line x1="177.1" y1="0" x2="177.1" y2="12" stroke="#12293F" stroke-width="1.6"/></svg>
+        <p class="card-foot"><span>Plan 46.8%</span><span style="color:#B03A2E">-0.5pp vs H1 2025</span></p>
+      </article>
+      <article class="card">
+        <p class="card-label">Units sold</p>
+        <p class="card-value">652k</p>
+        <svg viewBox="0 0 209 12" width="209" height="12" class="rib"><rect x="0" y="4" width="209" height="4" fill="#E7EBEF" rx="2"/><rect x="0" y="4" width="173.6" height="4" fill="#B03A2E" rx="2"/><line x1="177.1" y1="0" x2="177.1" y2="12" stroke="#12293F" stroke-width="1.6"/></svg>
+        <p class="card-foot"><span>Plan 665k units</span><span style="color:#1E7A45">+14.1% vs H1 2025</span></p>
+      </article>
+      <article class="card">
+        <p class="card-label">E-commerce share</p>
+        <p class="card-value">30.0%</p>
+        <svg viewBox="0 0 209 12" width="209" height="12" class="rib"><rect x="0" y="4" width="209" height="4" fill="#E7EBEF" rx="2"/><rect x="0" y="4" width="177.1" height="4" fill="#1E7A45" rx="2"/><line x1="159.5" y1="0" x2="159.5" y2="12" stroke="#12293F" stroke-width="1.6"/></svg>
+        <p class="card-foot"><span>Plan 27.0%</span><span style="color:#1E7A45">+4.0pp vs H1 2025</span></p>
+      </article>
+  </section>
+
+  <section class="grid">
+    <div class="panel">
+      <h2>Net revenue by month</h2>
+      <p class="note">Actual against budget, rolling 18 months</p>
+      <svg viewBox="0 0 797 230" width="797" height="230" role="img" aria-label="Monthly net revenue against budget"><line x1="46" y1="200.0" x2="785" y2="200.0" stroke="#DDE3E9" stroke-width="1"/><text x="38" y="203.5" text-anchor="end" class="ax">0</text><line x1="46" y1="154.0" x2="785" y2="154.0" stroke="#DDE3E9" stroke-width="1"/><text x="38" y="157.5" text-anchor="end" class="ax">339</text><line x1="46" y1="108.0" x2="785" y2="108.0" stroke="#DDE3E9" stroke-width="1"/><text x="38" y="111.5" text-anchor="end" class="ax">678</text><line x1="46" y1="62.0" x2="785" y2="62.0" stroke="#DDE3E9" stroke-width="1"/><text x="38" y="65.5" text-anchor="end" class="ax">1,017</text><line x1="46" y1="16.0" x2="785" y2="16.0" stroke="#DDE3E9" stroke-width="1"/><text x="38" y="19.5" text-anchor="end" class="ax">1,356</text><polyline points="46.0,59.7 89.5,66.8 132.9,79.3 176.4,99.7 219.9,103.7 263.4,113.8 306.8,124.3 350.3,122.9 393.8,102.0 437.2,80.2 480.7,73.5 524.2,98.5 567.6,43.3 611.1,50.8 654.6,62.3 698.1,82.6 741.5,90.7 785.0,100.9" fill="none" stroke="#6B7785" stroke-width="1.6" stroke-dasharray="5 4"/><polygon points="46,200 46.0,58.4 89.5,67.2 132.9,75.2 176.4,96.0 219.9,100.7 263.4,112.2 306.8,122.4 350.3,121.8 393.8,98.0 437.2,77.2 480.7,72.3 524.2,94.6 567.6,35.7 611.1,49.4 654.6,57.8 698.1,78.3 741.5,88.4 785.0,97.7 785.0,200" fill="#1F4468" opacity="0.08"/><polyline points="46.0,58.4 89.5,67.2 132.9,75.2 176.4,96.0 219.9,100.7 263.4,112.2 306.8,122.4 350.3,121.8 393.8,98.0 437.2,77.2 480.7,72.3 524.2,94.6 567.6,35.7 611.1,49.4 654.6,57.8 698.1,78.3 741.5,88.4 785.0,97.7" fill="none" stroke="#1F4468" stroke-width="2.4" stroke-linejoin="round"/><circle cx="785.0" cy="97.7" r="4" fill="#B8873B"/><text x="46.0" y="220" text-anchor="middle" class="ax">Jan 25</text><text x="176.4" y="220" text-anchor="middle" class="ax">Apr 25</text><text x="306.8" y="220" text-anchor="middle" class="ax">Jul 25</text><text x="437.2" y="220" text-anchor="middle" class="ax">Oct 25</text><text x="567.6" y="220" text-anchor="middle" class="ax">Jan 26</text><text x="698.1" y="220" text-anchor="middle" class="ax">Apr 26</text><text x="785.0" y="220" text-anchor="middle" class="ax">Jun 26</text></svg>
+      <div class="legend">
+        <span><i style="background:#1F4468"></i>Actual</span>
+        <span><i style="background:#6B7785"></i>Budget</span>
+        <span><i style="background:#B8873B"></i>Latest month</span>
+      </div>
+    </div>
+    <div class="panel">
+      <h2>Channel mix shift</h2>
+      <p class="note">Share of net revenue — the move to online</p>
+      <svg viewBox="0 0 381 158" width="381" height="158"><text x="0" y="24" class="bl">FY2024</text><rect x="62.0" y="12" width="147.1" height="18" fill="#1F4468"/><text x="135.6" y="25" text-anchor="middle" class="seg">46%</text><rect x="209.1" y="12" width="100.5" height="18" fill="#5B87AD"/><text x="259.4" y="25" text-anchor="middle" class="seg">31%</text><rect x="309.6" y="12" width="71.4" height="18" fill="#B8873B"/><text x="345.3" y="25" text-anchor="middle" class="seg">22%</text><text x="0" y="70" class="bl">FY2025</text><rect x="62.0" y="58" width="136.5" height="18" fill="#1F4468"/><text x="130.3" y="71" text-anchor="middle" class="seg">43%</text><rect x="198.5" y="58" width="96.7" height="18" fill="#5B87AD"/><text x="246.9" y="71" text-anchor="middle" class="seg">30%</text><rect x="295.3" y="58" width="85.7" height="18" fill="#B8873B"/><text x="338.1" y="71" text-anchor="middle" class="seg">27%</text><text x="0" y="116" class="bl">H1 2026</text><rect x="62.0" y="104" width="129.7" height="18" fill="#1F4468"/><text x="126.9" y="117" text-anchor="middle" class="seg">41%</text><rect x="191.7" y="104" width="93.7" height="18" fill="#5B87AD"/><text x="238.5" y="117" text-anchor="middle" class="seg">29%</text><rect x="285.4" y="104" width="95.6" height="18" fill="#B8873B"/><text x="333.2" y="117" text-anchor="middle" class="seg">30%</text></svg>
+      <div class="legend">
+        <span><i style="background:#1F4468"></i>Pharmacy</span>
+        <span><i style="background:#5B87AD"></i>Retail</span>
+        <span><i style="background:#B8873B"></i>E-commerce</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="grid3">
+    <div class="panel">
+      <h2>Country</h2>
+      <p class="note">Net revenue, year to date, with growth on last year</p>
+      <svg viewBox="0 0 376 158" width="376" height="158"><text x="0" y="19" class="bl">Poland</text><rect x="96" y="9" width="214.0" height="13" fill="#1F4468" rx="1.5"/><text x="376" y="19" text-anchor="end" class="bv">2,055</text><text x="96" y="34" class="bx" fill="#1E7A45">+22.9%</text><text x="0" y="57" class="bl">Hungary</text><rect x="96" y="47" width="188.4" height="13" fill="#1F4468" rx="1.5"/><text x="376" y="57" text-anchor="end" class="bv">1,809</text><text x="96" y="72" class="bx" fill="#1E7A45">+10.9%</text><text x="0" y="95" class="bl">Romania</text><rect x="96" y="85" width="125.2" height="13" fill="#1F4468" rx="1.5"/><text x="376" y="95" text-anchor="end" class="bv">1,203</text><text x="96" y="110" class="bx" fill="#1E7A45">+9.2%</text><text x="0" y="133" class="bl">Czechia</text><rect x="96" y="123" width="80.7" height="13" fill="#1F4468" rx="1.5"/><text x="376" y="133" text-anchor="end" class="bv">775</text><text x="96" y="148" class="bx" fill="#1E7A45">+13.7%</text></svg>
+    </div>
+    <div class="panel">
+      <h2>Category</h2>
+      <p class="note">Net revenue, year to date, with growth on last year</p>
+      <svg viewBox="0 0 376 158" width="376" height="158"><text x="0" y="19" class="bl">Vitamins & Minerals</text><rect x="96" y="9" width="214.0" height="13" fill="#5B87AD" rx="1.5"/><text x="376" y="19" text-anchor="end" class="bv">2,253</text><text x="96" y="34" class="bx" fill="#1E7A45">+14.0%</text><text x="0" y="57" class="bl">Cough & Cold</text><rect x="96" y="47" width="132.9" height="13" fill="#5B87AD" rx="1.5"/><text x="376" y="57" text-anchor="end" class="bv">1,400</text><text x="96" y="72" class="bx" fill="#1E7A45">+13.8%</text><text x="0" y="95" class="bl">Digestive Health</text><rect x="96" y="85" width="113.7" height="13" fill="#5B87AD" rx="1.5"/><text x="376" y="95" text-anchor="end" class="bv">1,197</text><text x="96" y="110" class="bx" fill="#1E7A45">+12.0%</text><text x="0" y="133" class="bl">Sports Nutrition</text><rect x="96" y="123" width="94.2" height="13" fill="#5B87AD" rx="1.5"/><text x="376" y="133" text-anchor="end" class="bv">991</text><text x="96" y="148" class="bx" fill="#1E7A45">+22.2%</text></svg>
+    </div>
+    <div class="panel">
+      <h2>Margin by channel</h2>
+      <p class="note">Gross margin and trade discount rate</p>
+      <div class="mrow"><span>E-commerce</span><span class="mbar"><i style="width:80.6%"></i></span><b>47.4%</b><em>disc. 11.6%</em></div><div class="mrow"><span>Pharmacy</span><span class="mbar"><i style="width:78.2%"></i></span><b>46.0%</b><em>disc. 11.6%</em></div><div class="mrow"><span>Retail</span><span class="mbar"><i style="width:72.3%"></i></span><b>42.5%</b><em>disc. 11.6%</em></div>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>Where the revenue sits</h2>
+    <p class="note">Largest country and category combinations, year to date June 2026</p>
+    <table>
+      <thead><tr><th>Country</th><th>Category</th><th class="num">Net revenue</th>
+      <th class="num">Share</th><th class="num">vs LY</th><th class="num">Gross margin</th><th></th></tr></thead>
+      <tbody><tr>
+      <td>Poland</td><td>Vitamins & Minerals</td>
+      <td class="num">773</td>
+      <td class="num">13.2%</td>
+      <td class="num" style="color:#1E7A45">+21.8%</td>
+      <td class="num">47.9%</td>
+      <td class="spark"><span class="dot" style="background:#1E7A45"></span><span class="dot" style="background:#1E7A45"></span><span class="dot" style="background:#1E7A45"></span><span class="dot" style="background:#1E7A45"></span></td>
+    </tr><tr>
+      <td>Hungary</td><td>Vitamins & Minerals</td>
+      <td class="num">689</td>
+      <td class="num">11.8%</td>
+      <td class="num" style="color:#1E7A45">+10.0%</td>
+      <td class="num">47.9%</td>
+      <td class="spark"><span class="dot" style="background:#1E7A45"></span><span class="dot" style="background:#1E7A45"></span></td>
+    </tr><tr>
+      <td>Romania</td><td>Vitamins & Minerals</td>
+      <td class="num">500</td>
+      <td class="num">8.6%</td>
+      <td class="num" style="color:#1E7A45">+9.6%</td>
+      <td class="num">47.9%</td>
+      <td class="spark"><span class="dot" style="background:#1E7A45"></span><span class="dot" style="background:#1E7A45"></span></td>
+    </tr><tr>
+      <td>Hungary</td><td>Cough & Cold</td>
+      <td class="num">472</td>
+      <td class="num">8.1%</td>
+      <td class="num" style="color:#1E7A45">+11.7%</td>
+      <td class="num">43.6%</td>
+      <td class="spark"><span class="dot" style="background:#1E7A45"></span><span class="dot" style="background:#1E7A45"></span></td>
+    </tr><tr>
+      <td>Poland</td><td>Cough & Cold</td>
+      <td class="num">470</td>
+      <td class="num">8.0%</td>
+      <td class="num" style="color:#1E7A45">+20.0%</td>
+      <td class="num">43.7%</td>
+      <td class="spark"><span class="dot" style="background:#1E7A45"></span><span class="dot" style="background:#1E7A45"></span><span class="dot" style="background:#1E7A45"></span><span class="dot" style="background:#1E7A45"></span></td>
+    </tr><tr>
+      <td>Poland</td><td>Digestive Health</td>
+      <td class="num">409</td>
+      <td class="num">7.0%</td>
+      <td class="num" style="color:#1E7A45">+19.9%</td>
+      <td class="num">45.2%</td>
+      <td class="spark"><span class="dot" style="background:#1E7A45"></span><span class="dot" style="background:#1E7A45"></span><span class="dot" style="background:#1E7A45"></span><span class="dot" style="background:#1E7A45"></span></td>
+    </tr><tr>
+      <td>Poland</td><td>Sports Nutrition</td>
+      <td class="num">403</td>
+      <td class="num">6.9%</td>
+      <td class="num" style="color:#1E7A45">+32.0%</td>
+      <td class="num">42.5%</td>
+      <td class="spark"><span class="dot" style="background:#1E7A45"></span><span class="dot" style="background:#1E7A45"></span><span class="dot" style="background:#1E7A45"></span><span class="dot" style="background:#1E7A45"></span><span class="dot" style="background:#1E7A45"></span></td>
+    </tr><tr>
+      <td>Hungary</td><td>Digestive Health</td>
+      <td class="num">364</td>
+      <td class="num">6.2%</td>
+      <td class="num" style="color:#1E7A45">+7.9%</td>
+      <td class="num">45.2%</td>
+      <td class="spark"><span class="dot" style="background:#1E7A45"></span></td>
+    </tr><tr>
+      <td>Czechia</td><td>Vitamins & Minerals</td>
+      <td class="num">291</td>
+      <td class="num">5.0%</td>
+      <td class="num" style="color:#1E7A45">+12.3%</td>
+      <td class="num">47.9%</td>
+      <td class="spark"><span class="dot" style="background:#1E7A45"></span><span class="dot" style="background:#1E7A45"></span></td>
+    </tr></tbody>
+    </table>
+  </section>
+</main>
+<footer>
+  <strong>Sample work.</strong> Kestrel Nutrition Kft. is a fictional company and every figure shown is
+  illustrative — no client data appears anywhere in this file. Report design and underlying data model
+  by Tarlan Charkasov, ACCA. Built on a star-schema dataset of 1,440 monthly fact rows across country, product, channel and calendar dimensions.
+</footer>
+</body></html>
