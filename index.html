@@ -246,6 +246,37 @@ a{color:inherit;}
 .step p{margin:0;font-size:14.3px;line-height:1.54;color:var(--ink-soft);}
 
 /* about */
+/* mid-page CTA band */
+.ctaband{background:var(--ink);color:#EAF0F6;border-radius:6px;
+  padding:clamp(24px,3.5vw,34px) clamp(22px,3.5vw,38px);
+  display:grid;grid-template-columns:minmax(0,1fr) auto;gap:22px;align-items:center;
+  margin-top:clamp(30px,4vw,44px);
+  box-shadow:0 16px 38px rgba(19,32,51,.16);}
+@media(max-width:780px){.ctaband{grid-template-columns:1fr;}}
+.ctaband h3{font-family:var(--serif);font-size:clamp(20px,2.5vw,26px);font-weight:700;
+  margin:0 0 8px;line-height:1.2;letter-spacing:-.016em;color:#fff;}
+.ctaband p{margin:0;font-size:15px;color:#BFCDDA;max-width:46em;}
+.ctaband .btns{display:flex;flex-wrap:wrap;gap:10px;}
+.ctaband .btn-primary{background:var(--gold);color:var(--ink);box-shadow:none;}
+.ctaband .btn-primary:hover{background:#C09A44;}
+.ctaband .btn-ghost{border-color:rgba(255,255,255,.35);color:#EAF0F6;background:transparent;}
+.ctaband .btn-ghost:hover{border-color:#fff;color:#fff;}
+
+/* faq */
+.faq-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:8px 34px;}
+.faq{border-top:1px solid var(--line);padding:16px 0 14px;}
+.faq h3{font-family:var(--serif);font-size:17.5px;font-weight:700;margin:0 0 7px;
+  line-height:1.3;letter-spacing:-.01em;}
+.faq p{margin:0;font-size:14.6px;line-height:1.58;color:var(--ink-soft);}
+.faq p + p{margin-top:8px;}
+
+/* about */
+.about-photo{margin:0 0 20px;}
+.about-photo img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:6px;
+  border:1px solid var(--line);display:block;
+  box-shadow:0 12px 30px rgba(19,32,51,.10);}
+.about-photo figcaption{font-size:12.5px;color:var(--muted);margin-top:9px;line-height:1.4;}
 .about-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);
   gap:clamp(28px,5vw,56px);}
 @media(max-width:880px){.about-grid{grid-template-columns:1fr;}}
@@ -305,6 +336,7 @@ a{color:inherit;}
       <a href="#credentials">Qualifications</a>
       <a href="#languages">Languages</a>
       <a href="#about">About</a>
+      <a href="#faq">FAQ</a>
       <a class="nav-cta" href="#contact">Get in touch</a>
     </nav>
   </div>
@@ -324,7 +356,8 @@ a{color:inherit;}
       to a board or a bank.</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#work">See a full sample pack</a>
-        <a class="btn btn-ghost" href="#contact">Start a conversation</a>
+        <a class="btn btn-ghost" href="https://calendly.com/YOUR-CALENDLY-LINK"
+           target="_blank" rel="noopener">Book a 20-minute call</a>
       </div>
       <p class="trust"><b>ACCA qualified</b> &middot; Three years Big Four audit at KPMG
         &middot; Working in English, Turkish and Azerbaijani</p>
@@ -681,6 +714,19 @@ a{color:inherit;}
     <p class="note">Danube Consumer Health Kft., Kestrel Nutrition Kft. and Halcyon Metalworks
     Kft. are fictional entities. Every figure in these files was generated for portfolio
     purposes; no client or employer data has been used.</p>
+
+    <div class="ctaband">
+      <div>
+        <h3>Want something like this for your own numbers?</h3>
+        <p>Tell me what you're working with and what it needs to do. If it's a fit I'll come
+        back with a scope and a fixed price; if it isn't, I'll say so.</p>
+      </div>
+      <div class="btns">
+        <a class="btn btn-primary" href="https://calendly.com/YOUR-CALENDLY-LINK"
+           target="_blank" rel="noopener">Book a 20-minute call</a>
+        <a class="btn btn-ghost" href="#contact">Or send an email</a>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -717,7 +763,7 @@ a{color:inherit;}
         <p class="org">KPMG Hungary &mdash; 2022 to 2025</p>
         <p>Three years of Big Four external audit across multiple industries: IFRS financial
         statements, risk assessment, analytical procedures, and supervision of junior staff.</p>
-        <a class="verify" href="https://www.linkedin.com/in/tarlan--charkasov-/"
+        <a class="verify" href="https://www.linkedin.com/in/YOUR-LINKEDIN-HANDLE"
            target="_blank" rel="noopener">See the full history on LinkedIn &rarr;</a>
       </article>
       <article class="cred">
@@ -803,6 +849,11 @@ a{color:inherit;}
         rather than being squeezed between twelve other jobs.</p>
       </div>
       <div>
+        <figure class="about-photo">
+          <img src="photo.jpg" alt="Tarlan Charkasov"
+               onerror="this.closest('.about-photo').style.display='none'">
+          <figcaption>Tarlan Charkasov, ACCA &mdash; Budapest, Hungary</figcaption>
+        </figure>
         <dl class="facts">
           <div><dt>Qualification</dt><dd>ACCA, fully qualified</dd></div>
           <div><dt>Education</dt><dd>BSc Business Administration &amp; Management,
@@ -818,26 +869,108 @@ a{color:inherit;}
 </section>
 
 <!-- ============================== CONTACT =============================== -->
+<!-- ================================ FAQ ================================= -->
+<section class="section" id="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Common questions</p>
+      <h2>The things people ask before they email.</h2>
+      <p>If your question isn't here, ask it directly &mdash; a straight answer costs
+      nothing and saves us both time.</p>
+    </div>
+    <div class="faq-grid">
+
+      <div class="faq">
+        <h3>Will you sign an NDA?</h3>
+        <p>Yes, and I'd expect you to ask. Send yours and I'll sign it before you share
+        anything. If you don't have one, I can provide a simple mutual NDA to work from.</p>
+      </div>
+
+      <div class="faq">
+        <h3>How do you handle my financial data?</h3>
+        <p>Your files stay in my own storage, are never shared with third parties, and are
+        deleted on request when the engagement closes. If you'd rather I work inside your
+        own environment &mdash; your drive, your system, your access controls &mdash;
+        that's usually the cleanest option and I'm happy to.</p>
+      </div>
+
+      <div class="faq">
+        <h3>You have a full-time job. Are you actually available?</h3>
+        <p>I take on a limited number of engagements at a time, which is exactly why I'm
+        careful about scope. I'll tell you my realistic delivery date before you commit,
+        and I'd rather decline than agree to a deadline I can't hold.</p>
+        <p>Evenings and weekends are my working hours for freelance work, so expect replies
+        outside standard office hours rather than instantly during the day.</p>
+      </div>
+
+      <div class="faq">
+        <h3>What does it cost?</h3>
+        <p>Fixed price per engagement, quoted in writing before anything starts &mdash; not
+        an hourly rate that grows while you watch. Price depends on scope: the number of
+        entities, how clean the source data is, and whether it's a one-off build or
+        recurring monthly work.</p>
+        <p>A twenty-minute call is usually enough for me to quote accurately.</p>
+      </div>
+
+      <div class="faq">
+        <h3>What do you need from me to start?</h3>
+        <p>Usually a trial balance or an export from your accounting system, last year's
+        figures if you have them, and a short conversation about what decision the numbers
+        need to support. I work from whatever your system produces &mdash; the format
+        matters less than the data being complete.</p>
+      </div>
+
+      <div class="faq">
+        <h3>What if the work isn't right?</h3>
+        <p>One round of revisions is included as standard, so if the format or the level of
+        detail isn't what you pictured, we fix it. Beyond that, I'd rather have an honest
+        conversation than leave you with something you won't use.</p>
+      </div>
+
+      <div class="faq">
+        <h3>Do you do bookkeeping, statutory accounts or tax returns?</h3>
+        <p>No. I build management reporting, models and analysis &mdash; the numbers you run
+        the business on. Statutory filings, audit and tax advice need a licensed local
+        provider, and I'll say so rather than take work I shouldn't.</p>
+      </div>
+
+      <div class="faq">
+        <h3>Do you work with companies outside Hungary?</h3>
+        <p>Yes &mdash; most of my work is remote and across borders. I'm in Budapest on
+        Central European Time, which overlaps a normal working day across Europe, the UK,
+        the Middle East and Central Asia.</p>
+        <p>I work in English, Turkish and Azerbaijani, so if your books are kept in Turkish
+        or Azerbaijani and your reporting needs to be in English, that handover happens
+        with one person instead of three.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
 <section class="contact" id="contact">
   <div class="wrap contact-grid">
     <div>
       <p class="eyebrow">Get in touch</p>
       <h2>Tell me what's <em>not adding up</em>.</h2>
-      <p class="contact-lede">Send a short note about what you're working with and what you
-      need it to do. If it's a fit I'll come back with a scope and a fixed price; if it isn't,
-      I'll say so and point you somewhere better.</p>
+      <p class="contact-lede">Book a short call or send a note about what you're working with and
+      what you need it to do. If it's a fit I'll come back with a scope and a fixed price; if
+      it isn't, I'll say so and point you somewhere better.</p>
       <p class="contact-meta">Usually replies within one working day. Based in Budapest (CET),
       working with clients across Europe.</p>
     </div>
     <div>
       <ul class="links">
+        <li><a href="https://calendly.com/YOUR-CALENDLY-LINK" target="_blank" rel="noopener">
+          <span class="lbl">Book a call</span><span class="v">20 minutes, free &rarr;</span></a></li>
         <li><a href="mailto:t.charkasov@gmail.com">
           <span class="lbl">Email</span><span class="v">t.charkasov@gmail.com</span></a></li>
-        <li><a href="https://www.linkedin.com/in/tarlan--charkasov-/" target="_blank" rel="noopener">
+        <li><a href="https://www.linkedin.com/in/YOUR-LINKEDIN-HANDLE" target="_blank" rel="noopener">
           <span class="lbl">LinkedIn</span><span class="v">Connect &rarr;</span></a></li>
-        <li><a href="https://www.fiverr.com/tarlan_ch_acca/buying?source=avatar_menu_profileE" target="_blank" rel="noopener">
+        <li><a href="https://www.fiverr.com/YOUR-FIVERR-USERNAME" target="_blank" rel="noopener">
           <span class="lbl">Fiverr</span><span class="v">View gigs &rarr;</span></a></li>
-        <li><a href="https://www.upwork.com/freelancers/~01979dd2527eb98562" target="_blank" rel="noopener">
+        <li><a href="https://www.upwork.com/freelancers/YOUR-UPWORK-ID" target="_blank" rel="noopener">
           <span class="lbl">Upwork</span><span class="v">View profile &rarr;</span></a></li>
       </ul>
     </div>
