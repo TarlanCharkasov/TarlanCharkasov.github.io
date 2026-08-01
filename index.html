@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tarlan Charkasov, ACCA — IFRS management accounts, financial modelling and reporting automation</title>
-<meta name="description" content="ACCA-qualified, ex-KPMG. IFRS management accounts, budgets, forecasts and financial models for SMEs and startups — in English, Turkish and Azerbaijani.">
+<meta name="description" content="ACCA-qualified, ex-KPMG. IFRS management accounts, cash flow forecasts, financial models and Excel automation for SMEs — in English, Turkish and Azerbaijani.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Tarlan Charkasov, ACCA — finance that reconciles">
 <meta property="og:description" content="IFRS management accounts, financial models and reporting automation. Ex-KPMG, ACCA-qualified. English, Turkish and Azerbaijani.">
@@ -165,6 +165,17 @@ a{color:inherit;}
   border-radius:1px;background:var(--brand-2);}
 
 /* work */
+.engagement{margin-bottom:38px;}
+.engagement:last-of-type{margin-bottom:0;}
+.eng-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px 16px;
+  border-top:2px solid var(--ink);padding-top:13px;margin-bottom:20px;}
+.eng-head h3{font-family:var(--serif);font-size:21px;font-weight:700;margin:0;
+  letter-spacing:-.014em;}
+.eng-head .eng-meta{font-size:13.5px;color:var(--muted);}
+.eng-head .eng-tag{font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;
+  font-weight:700;color:var(--brand);background:var(--brand-wash);
+  border:1px solid #C6DEEE;padding:3px 9px;border-radius:20px;margin-left:auto;}
+@media(max-width:620px){.eng-head .eng-tag{margin-left:0;}}
 .work{display:grid;grid-template-columns:repeat(auto-fit,minmax(298px,1fr));gap:22px;}
 .card{background:#fff;border:1px solid var(--line);border-radius:6px;overflow:hidden;
   display:flex;flex-direction:column;transition:box-shadow .18s,transform .18s;}
@@ -409,10 +420,10 @@ a{color:inherit;}
         <p>Annual budgets, rolling forecasts and three-statement models with clean
         assumption logic you can change without breaking anything.</p>
         <ul>
-          <li>Driver-based planning models</li>
-          <li>Scenario and sensitivity analysis</li>
-          <li>Cash flow and runway forecasting</li>
-          <li>Fundraising and lender models</li>
+          <li>Three-statement forecasting models</li>
+          <li>Scenario switches and sensitivity</li>
+          <li>13-week rolling cash flow forecasts</li>
+          <li>Capital investment appraisal (NPV, IRR)</li>
         </ul>
       </article>
       <article class="svc">
@@ -423,8 +434,8 @@ a{color:inherit;}
         <ul>
           <li>Excel and VBA automation</li>
           <li>Messy spreadsheet clean-up</li>
-          <li>Linked, refreshable report packs</li>
-          <li>Written handover notes</li>
+          <li>Control totals and audit trails</li>
+          <li>Documented source and handover</li>
         </ul>
       </article>
       <article class="svc">
@@ -433,9 +444,9 @@ a{color:inherit;}
         <p>Power BI dashboards built on a proper data model, showing the handful of numbers
         that actually change decisions.</p>
         <ul>
-          <li>Power BI data models and DAX</li>
-          <li>Margin and working capital KPIs</li>
-          <li>Cash conversion and net debt tracking</li>
+          <li>Star-schema data models and DAX</li>
+          <li>Margin, mix and working capital KPIs</li>
+          <li>Power BI or self-contained HTML</li>
           <li>Walkthrough call on handover</li>
         </ul>
       </article>
@@ -453,65 +464,223 @@ a{color:inherit;}
       synthetic data. Everything else is real: the structure, the formulas and the controls
       are exactly what I deliver.</p>
     </div>
-    <div class="work">
-      <article class="card">
-        <div class="card-top"></div>
-        <div class="card-body">
-          <p class="kicker">Monthly reporting pack</p>
-          <h3>Danube Consumer Health Kft</h3>
-          <p>A twelve-month IFRS management pack for a consumer-health distributor. Two trial
-          balances drive everything &mdash; the statements contain no hardcoded figures at
-          all, so changing one account mapping re-points the whole pack.</p>
-          <div class="figs">
-            <div><b>12</b><span>tabs</span></div>
-            <div><b>2,146</b><span>live formulas</span></div>
-            <div><b>10/10</b><span>checks pass</span></div>
+    <div class="engagement">
+      <div class="eng-head">
+        <h3>Danube Consumer Health Kft.</h3>
+        <span class="eng-meta">Consumer health distributor &middot; Hungary, Romania, Slovakia, Czechia &middot; &euro;37.8m revenue</span>
+        <span class="eng-tag">IFRS reporting</span>
+      </div>
+      <div class="work">
+
+        <article class="card">
+          <div class="card-top"></div>
+          <div class="card-body">
+            <p class="kicker">Monthly reporting pack</p>
+            <h3>Management accounts, built to tie</h3>
+            <p>A twelve-month IFRS pack driven entirely from two trial balances. The
+            statements contain no hardcoded figures at all, so changing one account
+            mapping re-points the whole pack.</p>
+            <div class="figs">
+              <div><b>12</b><span>tabs</span></div>
+              <div><b>2,146</b><span>live formulas</span></div>
+              <div><b>10/10</b><span>checks pass</span></div>
+            </div>
+            <div class="dl">
+              <a href="samples/danube/danube-management-pack.xlsx">Excel workbook</a>
+              <a class="muted" href="samples/danube/danube-management-pack.pdf">PDF</a>
+            </div>
           </div>
-          <div class="dl">
-            <a href="samples/danube-management-pack.xlsx">Excel workbook</a>
-            <a class="muted" href="samples/danube-management-pack.pdf">PDF</a>
+        </article>
+
+        <article class="card">
+          <div class="card-top"></div>
+          <div class="card-body">
+            <p class="kicker">Variance analysis</p>
+            <h3>Actual vs budget, explained</h3>
+            <p>The condensed P&amp;L against budget, an EBITDA bridge walking plan to actual
+            through six drivers, and the commentary that turns a &euro;507k miss into
+            something a board can act on.</p>
+            <div class="figs">
+              <div><b>&minus;507k</b><span>EBITDA vs plan</span></div>
+              <div><b>6</b><span>bridge drivers</span></div>
+              <div><b>45 d</b><span>cash cycle</span></div>
+            </div>
+            <div class="dl">
+              <a href="samples/danube/variance-summary.pdf">Read the summary</a>
+            </div>
           </div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-top"></div>
-        <div class="card-body">
-          <p class="kicker">Variance analysis</p>
-          <h3>Actual vs budget, explained</h3>
-          <p>A three-page summary: the condensed P&amp;L against budget, an EBITDA bridge
-          walking plan to actual through six drivers, and the commentary that turns a
-          &euro;507k miss into something a board can act on.</p>
-          <div class="figs">
-            <div><b>&minus;507k</b><span>EBITDA vs plan</span></div>
-            <div><b>6</b><span>bridge drivers</span></div>
-            <div><b>45 d</b><span>cash cycle</span></div>
+        </article>
+
+        <article class="card">
+          <div class="card-top"></div>
+          <div class="card-body">
+            <p class="kicker">Management commentary</p>
+            <h3>What the numbers actually said</h3>
+            <p>The year missed budget on profit but beat it on cash. Working capital released
+            &euro;1.4m, funding a dividend and scheduled debt repayment with the closing
+            balance still ahead. Four actions carried forward.</p>
+            <div class="figs">
+              <div><b>39.2%</b><span>gross margin</span></div>
+              <div><b>0.06x</b><span>net debt / EBITDA</span></div>
+              <div><b>+676k</b><span>cash movement</span></div>
+            </div>
+            <div class="dl">
+              <a class="muted" href="samples/danube/danube-management-pack.pdf#page=20">Commentary</a>
+            </div>
           </div>
-          <div class="dl">
-            <a href="samples/variance-summary.pdf">Read the summary</a>
-          </div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card-top"></div>
-        <div class="card-body">
-          <p class="kicker">Management commentary</p>
-          <h3>What the numbers actually said</h3>
-          <p>The year missed budget on profit but beat it on cash. Working capital released
-          &euro;1.4m, funding a dividend and scheduled debt repayment with the closing balance
-          still ahead. Four actions carried forward.</p>
-          <div class="figs">
-            <div><b>39.2%</b><span>gross margin</span></div>
-            <div><b>0.06x</b><span>net debt / EBITDA</span></div>
-            <div><b>+676k</b><span>cash movement</span></div>
-          </div>
-          <div class="dl">
-            <a class="muted" href="samples/danube-management-pack.pdf#page=20">Commentary</a>
-          </div>
-        </div>
-      </article>
+        </article>
+
+      </div>
     </div>
-    <p class="note">Danube Consumer Health Kft is a fictional entity. Every figure in these
-    files was generated for portfolio purposes; no client or employer data has been used.</p>
+
+    <div class="engagement">
+      <div class="eng-head">
+        <h3>Kestrel Nutrition Kft.</h3>
+        <span class="eng-meta">Consumer health &amp; VMS distributor &middot; Hungary, Poland, Romania, Czechia &middot; &euro;9.6m revenue</span>
+        <span class="eng-tag">Planning &amp; analysis</span>
+      </div>
+      <div class="work">
+
+        <article class="card">
+          <div class="card-top"></div>
+          <div class="card-body">
+            <p class="kicker">Board reporting pack</p>
+            <h3>The month, with a point of view</h3>
+            <p>Revenue beat budget by 3.0% and EBITDA by &euro;62k &mdash; and the commentary
+            says why neither is good news. The beat was bought with trade discount, and the
+            EBITDA variance is campaign spend that slipped into Q3.</p>
+            <div class="figs">
+              <div><b>&minus;1.4pp</b><span>gross margin vs plan</span></div>
+              <div><b>468</b><span>live formulas</span></div>
+              <div><b>5</b><span>actions with owners</span></div>
+            </div>
+            <div class="dl">
+              <a href="samples/kestrel/monthly-management-accounts.xlsx">Excel workbook</a>
+              <a class="muted" href="samples/kestrel/monthly-management-accounts.pdf">PDF</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-top"></div>
+          <div class="card-body">
+            <p class="kicker">Three-statement model</p>
+            <h3>Seven years, one switch</h3>
+            <p>Two years of actuals and five forecast years, fully linked. Interest is charged
+            on opening balances, so there are no circular references, and cash is the balancing
+            item &mdash; no revolver, no plug line anywhere.</p>
+            <div class="figs">
+              <div><b>763</b><span>live formulas</span></div>
+              <div><b>3</b><span>scenarios, one switch</span></div>
+              <div><b>2.35x</b><span>downside covenant breach</span></div>
+            </div>
+            <div class="dl">
+              <a href="samples/kestrel/three-statement-model.xlsx">Excel workbook</a>
+              <a class="muted" href="samples/kestrel/three-statement-model.pdf">PDF</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-top"></div>
+          <div class="card-body">
+            <p class="kicker">Commercial dashboard</p>
+            <h3>Where the revenue actually sits</h3>
+            <p>A one-page commercial view built on a star-schema dataset: KPIs against plan,
+            channel mix shift, country and category growth, and margin by channel. Opens in
+            your browser &mdash; no software needed.</p>
+            <div class="figs">
+              <div><b>1,440</b><span>fact rows modelled</span></div>
+              <div><b>4</b><span>dimension tables</span></div>
+              <div><b>30%</b><span>e-commerce share</span></div>
+            </div>
+            <div class="dl">
+              <a href="samples/kestrel/commercial-dashboard.html" target="_blank" rel="noopener">Open the dashboard</a>
+              <a class="muted" href="samples/kestrel/commercial-dashboard.png">PNG</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+
+    <div class="engagement">
+      <div class="eng-head">
+        <h3>Halcyon Metalworks Kft.</h3>
+        <span class="eng-meta">Tier-2 precision machining &middot; Gy&#337;r &middot; &euro;34.8m revenue &middot; German and Austrian OEMs</span>
+        <span class="eng-tag">Cash, automation &amp; capex</span>
+      </div>
+      <div class="work">
+
+        <article class="card">
+          <div class="card-top"></div>
+          <div class="card-body">
+            <p class="kicker">13-week cash flow forecast</p>
+            <h3>Liquidity against a covenant</h3>
+            <p>Direct method, weekly buckets, with the revolving facility swept automatically.
+            Every receipt and payment traces to a dated invoice line &mdash; nothing is typed
+            into the grid. One cell rolls the whole forecast forward.</p>
+            <div class="figs">
+              <div><b>195k</b><span>headroom at the trough</span></div>
+              <div><b>3.3 d</b><span>slippage to breach</span></div>
+              <div><b>16/16</b><span>checks pass</span></div>
+            </div>
+            <div class="dl">
+              <a href="samples/halcyon/13-week-cash-flow-forecast.xlsx">Excel workbook</a>
+              <a class="muted" href="samples/halcyon/13-week-cash-flow-forecast.pdf">PDF</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-top"></div>
+          <div class="card-body">
+            <p class="kicker">Excel &amp; VBA automation</p>
+            <h3>A month-end routine, rebuilt</h3>
+            <p>Twelve cost centre packs that took 4.2 hours and 23 manual steps, replaced by
+            one button. The manual version had quietly understated a cost centre by
+            &euro;7,300; the tool cannot, because control totals are tested on every run.</p>
+            <div class="figs">
+              <div><b>4.2 h &rarr; 3 s</b><span>run time</span></div>
+              <div><b>23 &rarr; 1</b><span>manual steps</span></div>
+              <div><b>811</b><span>lines of VBA</span></div>
+            </div>
+            <div class="dl">
+              <a href="samples/halcyon/cost-centre-tool-automated.xlsx">The tool</a>
+              <a class="muted" href="samples/halcyon/cost-centre-tool-manual-before.xlsx">Before</a>
+              <a class="muted" href="samples/halcyon/vba-source-modules.bas">VBA source</a>
+              <a class="muted" href="samples/halcyon/cost-centre-automation.pdf">PDF</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-top"></div>
+          <div class="card-body">
+            <p class="kicker">Capital investment appraisal</p>
+            <h3>A board paper that says no</h3>
+            <p>A &euro;1.83m machining centre over ten years: NPV, IRR, MIRR, payback and
+            twelve live scenario runs. The recommendation is not to approve as scoped, with
+            three conditions that would change the answer.</p>
+            <div class="figs">
+              <div><b>&minus;70k</b><span>NPV at 10.7% WACC</span></div>
+              <div><b>9.8%</b><span>IRR vs 12% hurdle</span></div>
+              <div><b>12</b><span>live scenario runs</span></div>
+            </div>
+            <div class="dl">
+              <a href="samples/halcyon/capital-investment-appraisal.xlsx">Excel workbook</a>
+              <a class="muted" href="samples/halcyon/capital-investment-appraisal.pdf">PDF</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <p class="note">Danube Consumer Health Kft., Kestrel Nutrition Kft. and Halcyon Metalworks
+    Kft. are fictional entities. Every figure in these files was generated for portfolio
+    purposes; no client or employer data has been used.</p>
   </div>
 </section>
 
@@ -525,6 +694,14 @@ a{color:inherit;}
       can confirm them independently.</p>
     </div>
     <div class="cred-grid">
+      <article class="cred">
+        <span class="badge badge-blue">Current role</span>
+        <h3>Senior Business Analysis &amp; Controlling Analyst</h3>
+        <p class="org">Consumer health multinational &mdash; 2025 to present</p>
+        <p>Lead budgeting, forecasting and month-end close for the CEE region, partnering
+        with commercial teams and building the financial models that support planning
+        decisions.</p>
+      </article>
       <article class="cred">
         <span class="badge badge-gold">Professional qualification</span>
         <h3>Chartered Certified Accountant</h3>

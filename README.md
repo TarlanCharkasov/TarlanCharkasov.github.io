@@ -7,24 +7,44 @@ Live at: https://tarlancharkasov.github.io
 
 ## Contents
 
-| Path | What it is |
-|------|------------|
-| `index.html` | The entire site. One file, no build step, no dependencies. |
-| `samples/danube-management-pack.xlsx` | Full 12-tab IFRS management pack (Excel) |
-| `samples/danube-management-pack.pdf` | The same pack as a 23-page PDF |
-| `samples/variance-summary.pdf` | 3-page actual-vs-budget summary |
+```
+index.html                 The entire site. One file, no build step, no dependencies.
+samples/
+  danube/                  Danube Consumer Health Kft. — IFRS reporting
+    danube-management-pack.xlsx        12-tab monthly pack, 2,146 formulas, 10/10 checks
+    danube-management-pack.pdf
+    variance-summary.pdf               3-page actual vs budget summary
+  kestrel/                 Kestrel Nutrition Kft. — planning & analysis
+    monthly-management-accounts.xlsx   7 tabs, 468 formulas, board pack with actions
+    monthly-management-accounts.pdf
+    three-statement-model.xlsx         FY2024A–FY2030E, 763 formulas, 3 scenarios
+    three-statement-model.pdf
+    commercial-dashboard.html          self-contained, opens in any browser
+    commercial-dashboard.png
+  halcyon/                 Halcyon Metalworks Kft. — cash, automation & capex
+    13-week-cash-flow-forecast.xlsx    8 tabs, RCF sweep, covenant test, 16/16 checks
+    13-week-cash-flow-forecast.pdf
+    cost-centre-tool-automated.xlsx    the automated month-end tool
+    cost-centre-tool-manual-before.xlsx  the manual routine it replaced
+    vba-source-modules.bas             811 lines, six modules
+    cost-centre-automation.pdf
+    capital-investment-appraisal.xlsx  NPV / IRR / MIRR, 12 scenario runs
+    capital-investment-appraisal.pdf
+```
 
 ## About the work samples
 
-The samples are built on **Danube Consumer Health Kft**, a fictional consumer-health
-distributor. All figures are synthetic and were generated for portfolio purposes.
-No client or employer data is used anywhere in this repository.
+**Danube Consumer Health Kft.**, **Kestrel Nutrition Kft.** and **Halcyon Metalworks Kft.**
+are fictional companies. All figures are synthetic and were generated for portfolio
+purposes. No client or employer data is used anywhere in this repository.
 
-The pack is driven entirely from two trial balances (actual and budget). The P&L,
-balance sheet, cash flow and KPI tabs contain no hardcoded figures — every line is a
-`SUMIFS` against the trial balance, routed through a single mapping column on the
-Chart of Accounts tab. A Checks tab holds ten integrity controls covering double entry,
-the balance sheet identity, the cash flow reconciliation and equity roll-forward.
+Every workbook carries its own integrity checks, and none is presented as complete until
+they all pass: 10 of 10 for Danube, 16 of 16 for each Halcyon deliverable, and a four-way
+check panel across seven years in the Kestrel model.
+
+The Kestrel model is worth opening on the Assumptions tab: switching cell `C5` to 3
+(downside) flexes all seven years and correctly raises a covenant breach flag at 2.35x
+against the 2.25x limit, while the balance sheet still balances in every year.
 
 ## Editing the site
 
